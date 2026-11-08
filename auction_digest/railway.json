@@ -1,0 +1,9 @@
+{
+  "$schema": "https://railway.com/railway.schema.json",
+  "deploy": {
+    "startCommand": "python -m auction_digest.cli",
+    "cronSchedule": "0 6 * * *",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 2
+  }
+}

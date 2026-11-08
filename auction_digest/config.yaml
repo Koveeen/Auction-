@@ -1,0 +1,20 @@
+rules:
+  regions: [russia, russian empire, imperial russia, russian federation]
+  denominations: [gold, 25 kopecks, 50 kopecks, 1 ruble, 2 rubles, 3 rubles, 5 rubles, 10 rubles, 15 rubles, 20 rubles]
+  grade_min_numeric: 60
+  grade_keywords: [AU, UNC, BU, MS60, MS61, MS62, MS63, MS64, MS65, MS66, MS67, MS68, MS69, MS70]
+  exclude_keywords: [details, cleaned, scratched, stained, repaired, damage, damaged, mount removed, holed]
+
+sources:
+  - id: heritage
+    name: Heritage Auctions
+    actor: crawloop/heritage-auctions-scraper
+    enabled: true
+    input:
+      # Heritage sale discovery can be narrowed later; the actor accepts its own schema.
+      auction_number: "61671"
+
+digest:
+  weekday: monday
+  hour_utc: 6
+  max_items: 50

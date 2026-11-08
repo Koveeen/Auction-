@@ -1,0 +1,1 @@
+"""Auction digest service."""
